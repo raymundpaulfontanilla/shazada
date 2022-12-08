@@ -1,0 +1,32 @@
+[
+    {
+      "id": 1,
+      "url": "https://www.charleskeith.com/dw/image/v2/BCWJ_PRD/on/demandware.static/-/Sites-ck-products/default/dwf17cb598/images/hi-res/2022-L7-CK1-70900430-41-1.jpg?sw=1152&sh=1536",
+      "name": "Lotso Studded Penny Loafers - Chalk",
+      "price": 1000
+    },
+    {
+      "id": 2,
+      "url": "https://www.charleskeith.com/dw/image/v2/BCWJ_PRD/on/demandware.static/-/Sites-ck-products/default/dw1ab01bf3/images/hi-res/2022-L7-CK1-70900430-30-1.jpg?sw=1152&sh=1536",
+      "name": "Lotso Studded Penny Loafers - Fuchsia",
+      "price": 2000
+    },
+    {
+      "id": 3,
+      "url": "https://www.charleskeith.com/dw/image/v2/BCWJ_PRD/on/demandware.static/-/Sites-ck-products/default/dwf033c6cb/images/hi-res/2022-L6-CK1-70900409-37-1.jpg?sw=1152&sh=1536",
+      "name": "Metallic Accent Loafers - Olive",
+      "price": 4000
+    },
+    {
+      "id": 4,
+      "url": "https://www.charleskeith.com/dw/image/v2/BCWJ_PRD/on/demandware.static/-/Sites-ck-products/default/dw849fa364/images/hi-res/2022-L7-CK1-70360143-49-1.jpg?sw=1152&sh=1536",
+      "name": "Rainier Chunky Platform Penny Loafers - Lilac",
+      "price": 3000
+    },
+    {
+      "id": 5,
+      "url": "https://www.charleskeith.com/dw/image/v2/BCWJ_PRD/on/demandware.static/-/Sites-ck-products/default/dw706d13bc/images/hi-res/2022-L7-CK1-70360143-17-1.jpg?sw=1152&sh=1536",
+      "name": "Rainier Chunky Platform Penny Loafers - Orange",
+      "price": 5000
+    }
+]

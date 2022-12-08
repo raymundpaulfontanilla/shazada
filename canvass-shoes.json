@@ -1,0 +1,32 @@
+[
+    {
+      "id": 1,
+      "url": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/a72655e9-ad29-4678-93e1-71dad30045d5/custom-nike-dunk-unlocked-by-you.png",
+      "name": "Nike Dunk Low Unlocked By You",
+      "price": 1000
+    },
+    {
+      "id": 2,
+      "url": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/0ba53757-d5d9-4ed2-a20d-b4253633ee21/custom-nike-air-force-1-low-by-you.png",
+      "name": "Nike Air Force 1 Low By You",
+      "price": 2000
+    },
+    {
+      "id": 3,
+      "url": "https://m.media-amazon.com/images/I/51hy45LrX3L.jpg",
+      "name": "Nike Air Force 1 Mid By You",
+      "price": 4000
+    },
+    {
+      "id": 4,
+      "url": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/0afb8e1c-fcee-48d1-9c84-6a3ee1ff7026/custom-nike-air-max-90-by-you.png",
+      "name": "Nike Air Max 90 By You",
+      "price": 3000
+    },
+    {
+      "id": 5,
+      "url": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/c1ce7743-b48d-4733-adbc-90d63823b547/custom-nike-blazer-low-77-by-you.png",
+      "name": "Nike Blazer Low '77 By You",
+      "price": 5000
+    }
+]
