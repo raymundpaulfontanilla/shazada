@@ -30,9 +30,11 @@ img:hover {
 }
 
 footer{
-    height: 100%;
-    width: 100%;
+    background-color: black;
+    height: 200px;
+    display: flex;
 }
+
 
 
 
