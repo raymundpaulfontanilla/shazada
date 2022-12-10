@@ -1,4 +1,4 @@
-fetch("mules.json")
+fetch("/data/mules.json")
   .then((response) => response.json())
   .then((json) => {
     let images = json.slice(0);
