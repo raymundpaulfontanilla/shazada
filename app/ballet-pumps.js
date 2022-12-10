@@ -1,4 +1,4 @@
-fetch("wedges.json")
+fetch("/data/ballet-pumps.json")
   .then((response) => response.json())
   .then((json) => {
     let images = json.slice(0);

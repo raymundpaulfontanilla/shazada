@@ -1,4 +1,4 @@
-fetch("minimal-sneakers.json")
+fetch("/data/oxford-shoes.json")
   .then((response) => response.json())
   .then((json) => {
     let images = json.slice(0);
@@ -8,7 +8,7 @@ fetch("minimal-sneakers.json")
       ).innerHTML += `<div class="col-md-3 mt-2">
           <div class="card mx-auto">
             <img src="${image.url}" class="card-img-top img-thumbnail"/>
-            <div class="collection-footer"> 
+            <div class="collection-footer">
             <span class="card-title text-center">${image.name}</span>
             <span class="card-title text-center">${image.price}PHP</span>
             </div>
