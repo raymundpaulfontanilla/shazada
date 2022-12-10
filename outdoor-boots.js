@@ -13,9 +13,15 @@ fetch("outdoor-boots.json")
             <span class="card-title text-center">${image.price}PHP</span>
             </div>
             <div class="card-body text-center">
-              <button>Add to Cart</button>
+              <button onclick="addToCart()">Add to Cart </button>
             </div>
           </div>
         </div>`;
     });
   });
+
+let cartCount = 0;
+function addToCart() {
+  cartCount++;
+  document.getElementById("cart-count").innerHTML = `${cartCount}`;
+}
