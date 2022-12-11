@@ -6,6 +6,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link rel="stylesheet" href="/assets/main.css">
+    <script type="text/javascript" src="/app/js/function.js"></script>
 </head>
 <body>
   <nav class="navbar sticky-top navbar-expand-lg bg-light">
@@ -25,103 +26,12 @@
     </div>
   </nav>
   <header>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6">
-          <a href="/template/male-categories.html"><img src="https://images.indianexpress.com/2018/01/men-model_759_ts.jpg" width="500"></a>
-          <div class='content'>
-            <h1 class='title'>MENS</h1>
-            <span class='subtitle'>SHOP NOW</span>
-          </div>
-        </div>
-        <div class="col-lg-6">
-          <a href="/template/women-categories.html"><img src="https://static.nike.com/a/images/t_prod/w_1920,c_limit,f_auto,q_auto/97e873a0-0b0a-4ba1-b6cc-ba184fe6a240/image.jpg" width="460"></a>
-          <div class='content'>
-            <h1 class='title'>WOMENS</h1>
-            <span class='subtitle'>SHOP NOW</span>
-          </div>
-        </div>
-      </div>
-    </div>
+    <div class="container" id="men-women-container"></div>
   </header>
   <section class="mt5 pt-5">
     <h1 class="text-center">BEST SELLER</h1>
   </section>
-  <article>
-    <div class="row row-cols-1 row-cols-md-3 g-4">
-      <div class="col">
-        <div class="card h-100">
-          <img src=${image.url} class="card-img-top" alt="...">
-          <div class="card-body">
-            <span class="card-title">${image.name}</span>
-            <span class="card-text">${image.price}</span>
-          </div>
-          <div class="card-footer">
-          <a class="btn btn-primary" onclick="addToCart()">Add to cart</a>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card h-100">
-          <img src=${image.url} class="card-img-top" alt="...">
-          <div class="card-body"> 
-          <span class="card-title">${image.name}</span>
-          <span class="card-text">${image.price}</span>
-          </div>
-          <div class="card-footer">
-            <a class="btn btn-primary" onclick="addToCart()">Add to cart</a>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card h-100">
-          <img src=${image.url} class="card-img-top" alt="...">
-          <div class="card-body">
-          <span class="card-title">${image.name}</span>
-          <span class="card-text">${image.price}</span>
-          </div>
-          <div class="card-footer">
-            <a class="btn btn-primary" onclick="addToCart()">Add to cart</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- <div class="row row-cols-1 row-cols-md-3 g-4">
-      <div class="col">
-        <div class="card h-100">
-          <a href="leather-loafers.html"><img src="https://media.gq.com/photos/625d7b7cd969a7417ee2dadc/master/w_960,c_limit/GQ-loafers7-jcrew.jpg" class="card-img-top" alt="..."></a>
-          <div class="card-body">
-            <h5 class="card-title">Suede Loafers</h5>
-          </div>
-          <div class="card-footer">
-            <span class="text-muted">Last updated 3 mins ago</span>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card h-100">
-          <a href="mules.html"><img src="/assets/images/silver-mules.jpg" class="card-img-top" alt="..."></a>
-          <div class="card-body">
-            <h5 class="card-title">Bow-Tie Mesh Mules - Silver</h5>
-          </div>
-          <div class="card-footer">
-            <small class="text-muted">Last updated 3 mins ago</small>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card h-100">
-          <a href="outdoor-boots.html"><img src="https://www.switchbacktravel.com/sites/default/files/image_fields/Best%20Of%20Gear%20Articles/Hiking%20and%20Backpacking/Hiking%20Boots/La%20Sportiva%20Ultra%20Raptor%20II%20Mid%20GTX%20hiking%20boot.jpeg" class="card-img-top" alt="..."></a>
-          <div class="card-body">
-            <h5 class="card-title">La Sportiva Ultra Raptor II Mid GTX</h5>
-          </div>
-          <div class="card-footer">
-            <small class="text-muted">Last updated 3 mins ago</small>
-          </div>
-        </div>
-      </div>
-    </div> -->
-  </article>
+  <article id="best-seller-image" class="row row-cols-1 row-cols-md-3 g-4"></article>
   <footer>
     <div class="mt-5 m-5 ms-5 container">
         <h2>Shazada</h2>
@@ -133,5 +43,9 @@
         </div>
     </div>
   </footer>
+  <script>
+    getJSONDataForContainer("/data/index.json");
+    getJSONDataForBestSeller("/data/best-seller.json")
+  </script>
 </body>
 </html>
