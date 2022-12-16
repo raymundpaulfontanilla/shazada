@@ -26,77 +26,9 @@ img:hover {
 .subtitle {
     font-weight: lighter;
     font-size: 16px;
-    
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* 
-.shoes {
-    height: 300px;
-    width: 300px;
+footer{
+    background-color: black;
+    height: 200px;
+    display: flex;
 }
-
-nav {
-    height: 300px;
-    width: 15%;
-    float: left;
-    background-color: orange;
-}
-
-section {
-    text-align: center;
-    width: 70%;
-    float: left;
-}
-
-article {
-    height: 300px;
-    width: 15%;
-    float: left;
-    background-color: orange;
-}
-
-body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-header {
-    background-color: orangered;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 10px;
-}
-
-footer {
-    text-align: center;
-} */
