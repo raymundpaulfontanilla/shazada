@@ -62,7 +62,7 @@ function getJSONDataForBestSeller(urlData) {
           "best-seller-image"
         ).innerHTML += `<div class="col">
         <div class="card h-100">
-          <a href="leather-loafers.html"><img src=${imageForBestSell.url} class="card-img-top" alt="..."></a>
+          <a href="/template/leather-loafers.html"><img src=${imageForBestSell.url} class="card-img-top" alt="..."></a>
           <div class="card-body">
             <span class="card-title">${imageForBestSell.name}</span>
             <span class="card-title">${imageForBestSell.price}</span>
@@ -74,7 +74,7 @@ function getJSONDataForBestSeller(urlData) {
       </div>
       <div class="col">
         <div class="card h-100">
-          <a href="mules.html"><img src=${imageForBestSell.url2} class="card-img-top" alt="..."></a>
+          <a href="/template/mules.html"><img src=${imageForBestSell.url2} class="card-img-top" alt="..."></a>
           <div class="card-body">
             <span class="card-title">${imageForBestSell.name2}</span>
             <span class="card-title">${imageForBestSell.price2}</span>
@@ -86,7 +86,7 @@ function getJSONDataForBestSeller(urlData) {
       </div>
       <div class="col">
         <div class="card h-100">
-          <a href="outdoor-boots.html"><img src=${imageForBestSell.url3} class="card-img-top" alt="..."></a>
+          <a href="/template/outdoor-boots.html"><img src=${imageForBestSell.url3} class="card-img-top" alt="..."></a>
           <div class="card-body">
             <span class="card-title">${imageForBestSell.name3}</span>
             <span class="card-title">${imageForBestSell.price3}</span>
