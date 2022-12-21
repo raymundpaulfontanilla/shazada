@@ -34,18 +34,22 @@ function getJSONDataForContainer(urlData) {
           "men-women-container"
         ).innerHTML += `<div class="row">
         <div class="col-lg-6">
-          <a href="/template/male-categories.html"><img src=${imageContain.mensUrl} width="500"></a>
-          <div class='content'>
+         <img src=${imageContain.mensUrl} width="500">
+         <a href="/template/male-categories.html">
+          <div class='male-content'>
             <h1 class='title'>${imageContain.title}</h1>
-            <span class='subtitle'>${imageContain.subtitle}</span>
+            <button class='subtitle'>${imageContain.subtitle}</button>
           </div>
+          </a>
         </div>
         <div class="col-lg-6">
-          <a href="/template/women-categories.html"><img src=${imageContain.womensUrl} width="460"></a>
-          <div class='content'>
+          <img src=${imageContain.womensUrl} width="460">
+          <a href="/template/women-categories.html">
+          <div class='women-content'>
             <h1 class='title'>${imageContain.title2}</h1>
-            <span class='subtitle'>${imageContain.subtitle}</span>
+            <button class="subtitle">${imageContain.subtitle}</button>
           </div>
+          </a>
         </div>
       </div>`;
       });
