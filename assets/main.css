@@ -15,17 +15,36 @@ img:hover {
 .container {
     margin-top: 15%;
     margin-right: 1%;
+    position: relative;
+    width: 100%;
+}
+.container .male-content {
+    position: absolute;
+    top:50%;
+    left:20%;
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
 .title {
     font-weight: bold;
     margin-bottom: 6px;
     font-size: 22px;
-    color: #4a4a4a;
-    
+    color:#000;
 }
 .subtitle {
     font-weight: lighter;
     font-size: 16px;
+    opacity: 0.7;
+}
+.subtitle:hover {
+    opacity: 1;
+}
+.container .women-content {
+    position: absolute;
+    top:50%;
+    left:70%;
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
 footer{
     background-color: black;
