@@ -74,7 +74,7 @@ function getJSONDataForBestSeller(urlData) {
               <h5 class="card-title">${imageForBestSell.name}</h5>
               <p>₱${imageForBestSell.price}</p>
               <p class="card-text pt-2"><small class="text-muted">Last updated 3 mins ago</small></p>
-              <a href="/template/leather-loafers.html"><button type="button" class="btn btn-warning float-end">Go to Shop</button></a>
+              <a href="/template/leather-loafers.html"><button type="button" class="btn btn-suede btn-warning float-end">Go to Shop</button></a>
             </div>
           </div>
         </div>
@@ -89,7 +89,7 @@ function getJSONDataForBestSeller(urlData) {
         <h5 class="card-title">${imageForBestSell.name2}</h5>
         <p>₱${imageForBestSell.price2}</p>
         <p class="card-text pt-2"><small class="text-muted">Last updated 3 mins ago</small></p>
-        <a href="/template/mules.html"><button type="button" class="btn btn-warning float-end">Go to Shop</button></a>
+        <a href="/template/mules.html"><button type="button" class="btn btn-bow btn-warning float-end">Go to Shop</button></a>
       </div>
     </div>
   </div>
@@ -104,7 +104,7 @@ function getJSONDataForBestSeller(urlData) {
       <h5 class="card-title">${imageForBestSell.name3}</h5>
       <p>₱${imageForBestSell.price3}</p>
       <p class="card-text pt-2"><small class="text-muted">Last updated 3 mins ago</small></p>
-      <a href="/template/outdoor-boots.html"><button type="button" class="btn btn-warning float-end">Go to Shop</button></a>
+      <a href="/template/outdoor-boots.html"><button type="button" class="btn btn-la btn-warning float-end">Go to Shop</button></a>
       </div>
     </div>
   </div>
