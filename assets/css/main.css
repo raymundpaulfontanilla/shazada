@@ -13,7 +13,10 @@ html, body {
     left:10%;
 }
 .best-seller {
-    padding-top: 10%;
+    padding-top: 15%;
+}
+#best-seller-image {
+    padding-top: 1%;
 }
 .backround-image {
     position: absolute;
@@ -66,6 +69,12 @@ footer{
     display: flex;
 }
 @media (max-width:1280px){
+    .best-seller {
+        padding-top: 40%;
+    }
+    #best-seller-image {
+        padding-top: 1%;
+    }
     .container .male-content {
         position: absolute;
         top:50%;
@@ -120,6 +129,12 @@ footer{
     }
 }
 @media (max-width:375px){
+    .best-seller {
+        padding-top: 52%;
+    }
+    #best-seller-image {
+        padding-top: 2%;
+    }
     .container .male-content {
         position: absolute;
         top:25%;
