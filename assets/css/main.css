@@ -1,5 +1,16 @@
+html, body {
+    max-width: 100%!important; overflow-x: hidden!important
+} 
 .collapse {
     float: right;
+}
+.fa {
+    color:#000;
+}
+.badge {
+    position: relative;
+    bottom:25%;
+    left:10%;
 }
 .best-seller {
     padding-top: 10%;
@@ -71,6 +82,25 @@ footer{
     }
 }
 @media (max-width:768px){
+    .container .male-content {
+        position: absolute;
+        top:25%;
+        left:35%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+    .container .women-content.backround-image {
+        position: absolute;
+        top:75%;
+        left:34.5%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+    .image-container:hover {
+        transform: scale(1);
+    }
+}
+@media (max-width:770px){
     .container .male-content {
         position: absolute;
         top:25%;
