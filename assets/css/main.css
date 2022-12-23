@@ -5,7 +5,10 @@ html, body {
     float:right;
 }
 .categories {
-    margin-top: 8%;
+    margin-top: 10%;
+}
+.card-title-mule {
+    margin-top: 7%;
 }
 .collapse {
     float: right;
@@ -17,6 +20,11 @@ html, body {
     position: relative;
     bottom:25%;
     left:10%;
+}
+.card-wedge {
+    width: 79%;
+    position: relative;
+    left:13%;
 }
 .shoes-parallax {
     width: 30%;
