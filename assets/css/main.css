@@ -4,6 +4,9 @@ html, body {
 .nav-item {
     float:right;
 }
+.fa:hover {
+    cursor: pointer;
+}
 .categories {
     margin-top: 10%;
 }
