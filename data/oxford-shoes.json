@@ -1,31 +1,25 @@
 [
   {
     "id": 1,
-    "url": "https://www.misiuacademy.com/wp-content/uploads/2022/11/101198-Meermin-Black-e1667326614818.jpg",
+    "url": "/assets/images/men-categories/oxford/M2_10119810190000SE-1_8c051190-188a-4b70-9f50-e11e318f1da7.webp",
     "name": "meermin",
     "price": 1000
   },
   {
     "id": 2,
-    "url": "https://www.misiuacademy.com/wp-content/uploads/2022/11/Septieme-Largeur-Eugene-Black-1-e1667327938307.jpg",
+    "url": "/assets/images/men-categories/oxford/carlos_santos_cap_toe_oxford_1631886609_648431d6.jpg",
     "name": "Septieme Largeur",
     "price": 2000
   },
   {
     "id": 3,
-    "url": "https://www.misiuacademy.com/wp-content/uploads/2022/11/Yearn-Shoemaker-Oxford-713-Black.jpg",
+    "url": "/assets/images/men-categories/oxford/Yearn4.webp",
     "name": "Yearn",
     "price": 4000
   },
   {
     "id": 4,
-    "url": "https://www.misiuacademy.com/wp-content/uploads/2022/11/Carlos-Santos-9899-Black-768x512.jpg",
-    "name": "Carlos Santos",
-    "price": 3000
-  },
-  {
-    "id": 5,
-    "url": "https://www.misiuacademy.com/wp-content/uploads/2022/11/TLB-Mallorca-Artista-Black-Oxford-1.jpg",
+    "url": "/assets/images/men-categories/oxford/7cd5bef9c695d3c3d402e6505b0a063c.jpg",
     "name": "Artista",
     "price": 5000
   }

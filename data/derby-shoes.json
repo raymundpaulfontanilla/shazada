@@ -1,32 +1,26 @@
 [
-    {
-      "id": 1,
-      "url": "https://cdn-fnknc.nitrocdn.com/jwqHRGAzpUgGskUSHlppNQzwuXgXIKwg/assets/static/optimized/rev-6e0f068/wp-content/uploads/2018/02/classic-derby-shoe.jpg",
-      "name": "Chunky Derbies",
-      "price": 1000
-    },
-    {
-      "id": 2,
-      "url": "https://cdn-fnknc.nitrocdn.com/jwqHRGAzpUgGskUSHlppNQzwuXgXIKwg/assets/static/optimized/rev-6e0f068/wp-content/uploads/2018/02/chunky-derby-shoe.jpg",
-      "name": "Derby Brogues",
-      "price": 2000
-    },
-    {
-      "id": 3,
-      "url": "https://cdn-fnknc.nitrocdn.com/jwqHRGAzpUgGskUSHlppNQzwuXgXIKwg/assets/static/optimized/rev-6e0f068/wp-content/uploads/2018/02/brogue-derby-shoe.jpg",
-      "name": "Derby Boots",
-      "price": 4000
-    },
-    {
-      "id": 4,
-      "url": "https://www.themanual.com/wp-content/uploads/sites/9/2022/02/alden-cordovan-blucher.jpeg?fit=800%2C800&p=1",
-      "name": "Alden Toe Blucher",
-      "price": 3000
-    },
-    {
-      "id": 5,
-      "url": "https://www.themanual.com/wp-content/uploads/sites/9/2022/02/cj-highbury.jpeg?fit=800%2C800&p=1",
-      "name": "Crocket Plain Toe",
-      "price": 5000
-    }
+  {
+    "id": 1,
+    "url": "/assets/images/men-categories/derby/s-l400.jpg",
+    "name": "Derby Brogues",
+    "price": 2000
+  },
+  {
+    "id": 2,
+    "url": "/assets/images/men-categories/derby/EqkDpqX0VjGpChylWsHlxyEy61uGszoGkA870MxV.webp",
+    "name": "Derby Boots",
+    "price": 4000
+  },
+  {
+    "id": 3,
+    "url": "/assets/images/men-categories/derby/alden-cordovan-blucher.webp",
+    "name": "Alden Toe Blucher",
+    "price": 3000
+  },
+  {
+    "id": 4,
+    "url": "/assets/images/men-categories/derby/cj-highbury.webp",
+    "name": "Crocket Plain Toe",
+    "price": 5000
+  }
 ]

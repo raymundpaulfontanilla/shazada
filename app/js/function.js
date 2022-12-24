@@ -31,7 +31,7 @@ function getJSONDataForContainer(urlData) {
         ).innerHTML += `<div class="row">
         <div class="col-lg-6">
          <img src=${imageContain.mensUrl} class="image-container" width="500">
-         <a href="/template/male-categories.html">
+         <a href="/template/men-categories.html">
           <div class='male-content'>
             <h1 class='title'>${imageContain.title}</h1>
             <button class='subtitle'>${imageContain.subtitle}</button>
