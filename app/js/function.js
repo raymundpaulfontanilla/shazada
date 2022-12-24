@@ -4,22 +4,51 @@ function getJSONData(urlData) {
     .then((json) => {
       let images = json.slice(0);
       images.map((image) => {
-        document.getElementById(
-          "imageSection"
-        ).innerHTML += `<div class="row row-cols-1 row-cols-md-3 g-4">
-      <div class="col">
-        <div class="card h-100">
-          <img src=${image.url} alt="...">
-          <div class="card-body">
-            <span class="card-title">${image.name}</span>
-            <span class="card-text">${image.price}</span>
-          </div>
-          <div class="card-footer">
-          <a class="btn btn-primary" onclick="addToCart()">Add to cart</a>
-          </div>
+        document.getElementById("container").innerHTML += `
+      <figure class="container">
+        <img src=${image.url2}
+          alt="sample94" />
+        <figcaption>
+          <h3 onclick="addToCart()">Add to cart</h3>
+        </figcaption>
+        <div class="footer">
+        <span class="card-title">${image.name2}</span>
+        <span class="card-text">₱${image.price2}</span>
         </div>
-      </div>
-    </div>`;
+      </figure>
+      <figure class="container">
+        <img src=${image.url3}
+          alt="sample92" />
+        <figcaption>
+          <h3 onclick="addToCart()">Add to cart</h3>
+        </figcaption>
+        <div class="footer">
+        <span class="card-title">${image.name3}</span>
+        <span class="card-text">₱${image.price3}</span>
+        </div>
+        </figure>
+        <figure class="container">
+        <img src=${image.url4}
+          alt="sample92" />
+        <figcaption>
+          <h3 onclick="addToCart()">Add to cart</h3>
+        </figcaption>
+        <div class="footer">
+        <span class="card-title">${image.name4}</span>
+        <span class="card-text">₱${image.price4}</span>
+        </div>
+        </figure>
+        <figure class="container">
+        <img src=${image.url5}
+          alt="sample92" />
+        <figcaption>
+          <h3 onclick="addToCart()">Add to cart</h3>
+        </figcaption>
+        <div class="footer">
+        <span class="card-title">${image.name5}</span>
+        <span class="card-text">₱${image.price5}</span>
+        </div>
+        </figure>`;
       });
     });
 }
