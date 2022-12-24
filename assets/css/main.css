@@ -32,6 +32,9 @@ html, body {
 #best-seller-image {
     padding-top: 1%;
 }
+.best-seller {
+    margin-top: 10%;
+}
 .backround-image {
     position: absolute;
     z-index: -1;

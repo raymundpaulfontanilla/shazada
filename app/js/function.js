@@ -52,34 +52,6 @@ function getJSONDataForContainer(urlData) {
     });
 }
 
-function getJSONDataForBestSeller(urlData) {
-  fetch(urlData)
-    .then((response) => response.json())
-    .then((json) => {
-      let imageForBestSeller = json.slice(0);
-      imageForBestSeller.map((imageForBestSell) => {
-        document.getElementById(
-          "best-seller-image"
-        ).innerHTML += `<div class="card mb-3" style="max-width: 540px;">
-        <div class="row g-0">
-          <div class="col-md-4">
-            <img src=${imageForBestSell.url} class="img-fluid rounded-start" alt="...">
-          </div>
-          <div class="col-md-8">
-            <div class="card-body">
-              <h5 class="card-title">${imageForBestSell.name}</h5>
-              <p>₱${imageForBestSell.price}</p>
-              <p class="card-text pt-2"><small class="text-muted">Last updated 3 mins ago</small></p>
-              <a href="/template/leather-loafers.html"><button type="button" class="btn btn-suede btn-warning float-end">Go to Shop</button></a>
-            </div>
-          </div>
-        </div>
-      </div>
-  `;
-      });
-    });
-}
-
 let cartCount = 0;
 function addToCart() {
   cartCount++;
