@@ -75,7 +75,7 @@ function getJSONDataForBestSeller(urlData) {
           </div>
         </div>
       </div>
-    `;
+  `;
       });
     });
 }
