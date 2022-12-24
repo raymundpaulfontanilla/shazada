@@ -6,49 +6,16 @@ function getJSONData(urlData) {
       images.map((image) => {
         document.getElementById("container").innerHTML += `
       <figure class="container">
-        <img src=${image.url2}
+        <img src=${image.url}
           alt="sample94" />
         <figcaption>
           <h3 onclick="addToCart()">Add to cart</h3>
         </figcaption>
         <div class="footer">
-        <span class="card-title">${image.name2}</span>
-        <span class="card-text" style="color:orange;">₱${image.price2}</span>
+        <span class="card-title">${image.name}</span>
+        <span class="card-text" style="color:orange;">₱${image.price}</span>
         </div>
-      </figure>
-      <figure class="container">
-        <img src=${image.url3}
-          alt="sample92" />
-        <figcaption>
-          <h3 onclick="addToCart()">Add to cart</h3>
-        </figcaption>
-        <div class="footer">
-        <span class="card-title">${image.name3}</span>
-        <span class="card-text" style="color:orange;">₱${image.price3}</span>
-        </div>
-        </figure>
-        <figure class="container">
-        <img src=${image.url4}
-          alt="sample92" />
-        <figcaption>
-          <h3 onclick="addToCart()">Add to cart</h3>
-        </figcaption>
-        <div class="footer">
-        <span class="card-title">${image.name4}</span>
-        <span class="card-text" style="color:orange;">₱${image.price4}</span>
-        </div>
-        </figure>
-        <figure class="container">
-        <img src=${image.url5}
-          alt="sample92" />
-        <figcaption>
-          <h3 onclick="addToCart()">Add to cart</h3>
-        </figcaption>
-        <div class="footer">
-        <span class="card-title">${image.name5}</span>
-        <span class="card-text" style="color:orange;">₱${image.price5}</span>
-        </div>
-        </figure>`;
+      </figure>`;
       });
     });
 }
@@ -108,36 +75,7 @@ function getJSONDataForBestSeller(urlData) {
           </div>
         </div>
       </div>
-      <div class="card mb-3" style="max-width: 540px;">
-  <div class="row g-0">
-    <div class="col-md-4">
-      <img src="${imageForBestSell.url2}" class="img-fluid rounded-start" alt="...">
-    </div>
-    <div class="col-md-8">
-      <div class="card-body">
-        <h5 class="card-title">${imageForBestSell.name2}</h5>
-        <p>₱${imageForBestSell.price2}</p>
-        <p class="card-text pt-2"><small class="text-muted">Last updated 3 mins ago</small></p>
-        <a href="/template/mules.html"><button type="button" class="btn btn-bow btn-warning float-end">Go to Shop</button></a>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="card mb-3" style="max-width: 540px;">
-  <div class="row g-0">
-    <div class="col-md-4">
-      <img src=${imageForBestSell.url3} class="img-fluid rounded-start" alt="...">
-    </div>
-    <div class="col-md-8">
-      <div class="card-body">
-      <h5 class="card-title">${imageForBestSell.name3}</h5>
-      <p>₱${imageForBestSell.price3}</p>
-      <p class="card-text pt-2"><small class="text-muted">Last updated 3 mins ago</small></p>
-      <a href="/template/outdoor-boots.html"><button type="button" class="btn btn-la btn-warning float-end">Go to Shop</button></a>
-      </div>
-    </div>
-  </div>
-</div>`;
+  `;
       });
     });
 }
