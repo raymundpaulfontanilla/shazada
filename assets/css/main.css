@@ -29,25 +29,6 @@ html, body {
     position: relative;
     left:13%;
 }
-.shoes-parallax {
-    width: 30%;
-    margin-left: 35%;
-    padding-top: 10%;
-}
-.wrapper {
-    overflow-y: auto;
-    overflow-x: hidden;
-    perspective: 10px;
-    transform-style: preserve-3d;
-    z-index: -1;
-    object-fit: cover;
-}
-.best-seller {
-    position: absolute;
-    top:113%;
-    left:42%;
-    transform: translateZ(-5px) scale(1.5);
-}
 #best-seller-image {
     padding-top: 1%;
 }
@@ -110,9 +91,6 @@ footer{
     bottom:5%;
 }
 @media (max-width:1280px){
-    .best-seller {
-        padding-top: 40%;
-    }
     #best-seller-image {
         padding-top: 1%;
     }
@@ -129,12 +107,6 @@ footer{
         left:72.9%;
         transform: translate(-50%, -50%);
         text-align: center;
-    }
-    .best-seller {
-        position: absolute;
-        top:13%;
-        left:42%;
-        transform: translateZ(-5px) scale(1.5);
     }
     .gmap {
         position: absolute;
@@ -162,12 +134,6 @@ footer{
     .image-container:hover {
         transform: scale(1);
     }
-    .best-seller {
-        position: absolute;
-        top:35%;
-        left:42%;
-        transform: translateZ(-5px) scale(1.5);
-    }
     #best-seller-image {
         margin-top: 20%;
     }
@@ -190,17 +156,11 @@ footer{
     .image-container:hover {
         transform: scale(1);
     }
-    .shoes-parallax {
-        display: none;
-    }
     .gmap {
         display: none;
     }
 }
 @media (max-width:375px){
-    .best-seller {
-        padding-top: 52%;
-    }
     #best-seller-image {
         padding-top: 2%;
     }
@@ -221,17 +181,8 @@ footer{
     .image-container:hover {
         transform: scale(1);
     }
-    .shoes-parallax {
-        display: none;
-    }
     .mb-3 {
         min-width: 100%;
-    }
-    .best-seller {
-        position: absolute;
-        top:50%;
-        left:30%;
-        transform: translateZ(-5px) scale(1.5);
     }
     .gmap {
         display: none;
