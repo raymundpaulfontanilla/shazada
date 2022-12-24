@@ -13,7 +13,7 @@ function getJSONData(urlData) {
         </figcaption>
         <div class="footer">
         <span class="card-title">${image.name2}</span>
-        <span class="card-text">₱${image.price2}</span>
+        <span class="card-text" style="color:orange;">₱${image.price2}</span>
         </div>
       </figure>
       <figure class="container">
@@ -24,7 +24,7 @@ function getJSONData(urlData) {
         </figcaption>
         <div class="footer">
         <span class="card-title">${image.name3}</span>
-        <span class="card-text">₱${image.price3}</span>
+        <span class="card-text" style="color:orange;">₱${image.price3}</span>
         </div>
         </figure>
         <figure class="container">
@@ -35,7 +35,7 @@ function getJSONData(urlData) {
         </figcaption>
         <div class="footer">
         <span class="card-title">${image.name4}</span>
-        <span class="card-text">₱${image.price4}</span>
+        <span class="card-text" style="color:orange;">₱${image.price4}</span>
         </div>
         </figure>
         <figure class="container">
@@ -46,7 +46,7 @@ function getJSONData(urlData) {
         </figcaption>
         <div class="footer">
         <span class="card-title">${image.name5}</span>
-        <span class="card-text">₱${image.price5}</span>
+        <span class="card-text" style="color:orange;">₱${image.price5}</span>
         </div>
         </figure>`;
       });
