@@ -24,13 +24,6 @@ html, body {
     padding: 15px;
     text-align: center;
 }
-.foot {
-    display: flex;
-    justify-content: space-between;
-    margin: 20px 0px;
-    padding: 10px 0px;
-    border-top: 1px solid #333;
-}
 .head {
     background-color: goldenrod;
     border-radius: 3px;
@@ -120,10 +113,13 @@ html, body {
 .form-control {
     border:0;
 }
-footer{
-    background-color: black;
-    height: 200px;
-    display: flex;
+.shazada-footer {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.shazada-margin-bold {
+    font-weight: bold;
+    font-size: 1.5rem;
 }
 .gmap {
     position: absolute;
