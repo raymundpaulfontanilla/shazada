@@ -223,4 +223,11 @@ html, body {
     .gmap {
         display: none;
     }
+    .copyright-footer {
+        display: none;
+    }
+    #shazada-footer {
+        position: absolute;
+        right:55%;
+    }
 }
