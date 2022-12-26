@@ -117,10 +117,6 @@ html, body {
     font-weight: bold;
     font-size: 1.5rem;
 }
-.shazada-margin-bold {
-    font-weight: bold;
-    font-size: 1.5rem;
-}
 .gmap {
     position: absolute;
     right: 5%;
@@ -221,9 +217,6 @@ html, body {
         min-width: 100%;
     }
     .gmap {
-        display: none;
-    }
-    .copyright-footer {
         display: none;
     }
     #shazada-footer {
