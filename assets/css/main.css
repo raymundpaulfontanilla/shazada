@@ -7,74 +7,18 @@ html, body {
 .fa:hover {
     cursor: pointer;
 }
+.fa {
+    color:#000;
+}
 .modal-body {
     display:flex;
     width: 70%;
     margin-bottom: 30px;
 }
-#root {
-    width: 60%;
-    display: grid;
-    grid-template-columns: (2, 1fr);
-}
-.sidebar {
-    width: 40%;
-    border-radius: #eee;
-    margin-left: 20px;
-    padding: 15px;
-    text-align: center;
-}
-.head {
-    background-color: goldenrod;
-    border-radius: 3px;
-    height: 40px;
-    padding: 10px;
-    margin-bottom: 20px;
-    color:#fff;
-    display: flex;
-    align-items: center;
-}
-.categories {
-    margin-top: 15%;
-}
-.card-title-mule {
-    margin-top: 7%;
-}
-.card-image {
-    margin-top: 5% ;
-}
-.collapse {
-    float: right;
-}
-.fa {
-    color:#000;
-}
 .badge {
     position: relative;
     bottom:25%;
     left:10%;
-}
-.card-wedge {
-    width: 79%;
-    position: relative;
-    left:13%;
-}
-#best-seller-image {
-    padding-top: 1%;
-}
-.best-seller {
-    margin-top: 15%;
-}
-.backround-image {
-    position: absolute;
-    z-index: -1;
-    background-position: center;
-    background-size: cover;
-}
-.image-container:hover {
-    transform: scale(1.1);
-    transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
-    cursor: pointer;
 }
 .container {
     margin-top: 15%;
@@ -88,6 +32,18 @@ html, body {
     left:20%;
     transform: translate(-50%, -50%);
     text-align: center;
+}
+.container .women-content {
+    position: absolute;
+    top:50%;
+    left:69.5%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.image-container:hover {
+    transform: scale(1.1);
+    transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+    cursor: pointer;
 }
 .title {
     font-weight: bold;
@@ -103,12 +59,39 @@ html, body {
 .subtitle:hover {
     opacity: 1;
 }
-.container .women-content {
+#best-seller-image {
+    padding-top: 1%;
+}
+.best-seller {
+    margin-top: 15%;
+}
+.gmap {
     position: absolute;
-    top:50%;
-    left:69.5%;
-    transform: translate(-50%, -50%);
-    text-align: center;
+    right: 5%;
+    bottom:5%;
+}
+.categories {
+    margin-top: 15%;
+}
+.card-title-mule {
+    margin-top: 7%;
+}
+.card-image {
+    margin-top: 5% ;
+}
+.collapse {
+    float: right;
+}
+.card-wedge {
+    width: 79%;
+    position: relative;
+    left:13%;
+}
+.backround-image {
+    position: absolute;
+    z-index: -1;
+    background-position: center;
+    background-size: cover;
 }
 .form-control {
     border:0;
@@ -117,15 +100,7 @@ html, body {
     font-weight: bold;
     font-size: 1.5rem;
 }
-.gmap {
-    position: absolute;
-    right: 5%;
-    bottom:5%;
-}
 @media (max-width:1280px){
-    #best-seller-image {
-        padding-top: 1%;
-    }
     .container .male-content {
         position: absolute;
         top:50%;
@@ -139,6 +114,9 @@ html, body {
         left:72.9%;
         transform: translate(-50%, -50%);
         text-align: center;
+    }
+    #best-seller-image {
+        padding-top: 1%;
     }
     .gmap {
         position: absolute;
@@ -193,9 +171,6 @@ html, body {
     }
 }
 @media (max-width:375px){
-    #best-seller-image {
-        padding-top: 2%;
-    }
     .container .male-content {
         position: absolute;
         top:25%;
@@ -212,6 +187,9 @@ html, body {
     }
     .image-container:hover {
         transform: scale(1);
+    }
+    #best-seller-image {
+        padding-top: 2%;
     }
     .mb-3 {
         min-width: 100%;
