@@ -1,0 +1,20 @@
+html, body {
+    max-width: 100%!important; overflow-x: hidden!important
+}
+body {
+    font-family: 'Slabo 27px', serif;
+}
+@media (max-width:768px){
+    .container {
+        position: relative;
+        right: 4%;
+    }
+    
+}
+@media (max-width:375px){
+    .container {
+        position: relative;
+        right: 12%;
+    }
+    
+}
