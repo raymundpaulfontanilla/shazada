@@ -1,32 +1,26 @@
 [
-    {
-      "id": 1,
-      "url": "https://travelfashiongirlpostphotos.s3.us-east-2.amazonaws.com/2014/The+Most+Comfortable+Ballet+Flats+for+Travel/cute-and-comfortable-ballet-flats-1.1.jpg",
-      "name": "Hush Puppies Chaste Black Flats",
-      "price": 1000
-    },
-    {
-      "id": 2,
-      "url": "https://s3.us-east-2.amazonaws.com/travelfashiongirlpostphotos/2014/The+Most+Comfortable+Ballet+Flats+for+Travel/cute-and-comfortable-ballet-flats-09.jpg",
-      "name": "Skechers Microburst Black Flat",
-      "price": 2000
-    },
-    {
-      "id": 3,
-      "url": "https://s3.us-east-2.amazonaws.com/travelfashiongirlpostphotos/2014/The+Most+Comfortable+Ballet+Flats+for+Travel/cute-and-comfortable-ballet-flats-31.jpg",
-      "name": "Cole Haan Tali Bow Black Flats",
-      "price": 4000
-    },
-    {
-      "id": 4,
-      "url": "https://s3.us-east-2.amazonaws.com/travelfashiongirlpostphotos/2014/The+Most+Comfortable+Ballet+Flats+for+Travel/cute-and-comfortable-ballet-flats-04.jpg",
-      "name": "Lucky Emmie Tan Ballet Flat",
-      "price": 3000
-    },
-    {
-      "id": 5,
-      "url": "https://images-na.ssl-images-amazon.com/images/I/51mjchZh25L._UX695_.jpg",
-      "name": "Josef Seibel Pippa Black Flat",
-      "price": 5000
-    }
+  {
+    "id": 1,
+    "url": "/assets/images/women-categories/ballet/cute-and-comfortable-ballet-flats-04.jpg",
+    "name": "Skechers Microburst Black Flat",
+    "price": 1000
+  },
+  {
+    "id": 2,
+    "url": "https://s3.us-east-2.amazonaws.com/travelfashiongirlpostphotos/2014/The+Most+Comfortable+Ballet+Flats+for+Travel/cute-and-comfortable-ballet-flats-09.jpg",
+    "name": "Skechers Microburst Black Flat",
+    "price": 2000
+  },
+  {
+    "id": 3,
+    "url": "https://s3.us-east-2.amazonaws.com/travelfashiongirlpostphotos/2014/The+Most+Comfortable+Ballet+Flats+for+Travel/cute-and-comfortable-ballet-flats-31.jpg",
+    "name": "Cole Haan Tali Bow Black Flats",
+    "price": 4000
+  },
+  {
+    "id": 5,
+    "url": "/assets/images/women-categories/ballet/51mjchZh25L._UX695_.jpg",
+    "name": "Josef Seibel Pippa Black Flat",
+    "price": 5000
+  }
 ]

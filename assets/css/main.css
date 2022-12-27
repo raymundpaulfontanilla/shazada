@@ -1,0 +1,222 @@
+html, body {
+    max-width: 100%!important; overflow-x: hidden!important
+}
+body {
+    font-family: 'Slabo 27px', serif;
+}
+li a:is(:link,:active,:visited) {
+    color:black;
+    text-decoration: none;
+    padding: .5rem 1.5rem;
+}
+a:is(:link,:active,:visited).active {
+    color:white;
+    background-color:rgb(240, 173, 78)
+}
+.nav-item {
+    float:right;
+}
+.fa:hover {
+    cursor: pointer;
+}
+.fa {
+    color:#000;
+}
+.modal-body {
+    display:flex;
+    width: 70%;
+    margin-bottom: 30px;
+}
+.badge {
+    position: relative;
+    bottom:25%;
+    left:10%;
+}
+.container {
+    margin-top: 15%;
+    margin-right: 1%;
+    position: relative;
+    width: 100%;
+}
+.container .male-content {
+    position: absolute;
+    top:50%;
+    left:20%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.container .women-content {
+    position: absolute;
+    top:50%;
+    left:69.5%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.image-container:hover {
+    transform: scale(1.1);
+    transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+    cursor: pointer;
+}
+.title {
+    font-weight: bold;
+    margin-bottom: 6px;
+    font-size: 22px;
+    color:#000;
+}
+.subtitle {
+    font-weight: lighter;
+    font-size: 16px;
+    opacity: 0.7;
+}
+.subtitle:hover {
+    opacity: 1;
+}
+#best-seller-image {
+    padding-top: 1%;
+}
+.best-seller {
+    margin-top: 15%;
+}
+.gmap {
+    position: absolute;
+    right: 5%;
+    bottom:5%;
+}
+.categories {
+    margin-top: 15%;
+}
+.card-title-mule {
+    margin-top: 7%;
+}
+.card-image {
+    margin-top: 5% ;
+}
+.collapse {
+    float: right;
+}
+.card-wedge {
+    width: 79%;
+    position: relative;
+    left:13%;
+}
+.backround-image {
+    position: absolute;
+    z-index: -1;
+    background-position: center;
+    background-size: cover;
+}
+.form-control {
+    border:0;
+}
+.shazada-footer {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+@media (max-width:1280px){
+    .container .male-content {
+        position: absolute;
+        top:50%;
+        left:23%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+    .container .women-content {
+        position: absolute;
+        top:50%;
+        left:72.9%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+    #best-seller-image {
+        padding-top: 1%;
+    }
+    .gmap {
+        position: absolute;
+        right: 1%;
+        bottom:5%;
+        height: 99%;
+        width: 45%;
+    }
+}
+@media (max-width:768px){
+    .container .male-content {
+        position: absolute;
+        top:25%;
+        left:35%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+    .container .women-content.backround-image {
+        position: absolute;
+        top:75%;
+        left:34.5%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+    .image-container:hover {
+        transform: scale(1);
+    }
+    #best-seller-image {
+        margin-top: 20%;
+    }
+}
+@media (max-width:770px){
+    .container .male-content {
+        position: absolute;
+        top:25%;
+        left:35%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+    .container .women-content {
+        position: absolute;
+        top:75%;
+        left:34.5%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+    .image-container:hover {
+        transform: scale(1);
+    }
+    .gmap {
+        display: none;
+    }
+}
+@media (max-width:375px){
+    .categories {
+        padding-top: 15%;
+    }
+    .container .male-content {
+        position: absolute;
+        top:25%;
+        left:20%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+    .container .women-content {
+        position: absolute;
+        top:75%;
+        left:20%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+    .image-container:hover {
+        transform: scale(1);
+    }
+    #best-seller-image {
+        padding-top: 2%;
+    }
+    .mb-3 {
+        min-width: 100%;
+    }
+    .gmap {
+        display: none;
+    }
+    #shazada-footer {
+        position: absolute;
+        right:55%;
+    }
+    .container {
+        float: left;
+    }
+}

@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>Shazada Philippines</title>
+  <title>Men Categories</title>
   <!--META TAGS-->
   <meta charset="UTF-8">
   <meta name="description" content="online shoes shopping cart">
@@ -22,13 +22,12 @@
   <link href="https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap" rel="stylesheet">
   <!--External CSS-->
   <link rel="stylesheet" href="/assets/css/main.css" />
-  <link rel="stylesheet" href="/assets/css/button-image-hover.css" />
   <!--External Javascript-->
   <script type="text/javascript" src="/app/js/function.js"></script>
 </head>
 
 <body>
-  <!--Navbar-->
+  <!-- Navbar-->
   <nav class="navbar navbar-expand-lg fixed-top bg-light">
     <div class="container-fluid">
       <a class="navbar-brand" href="/index.html"><img src="
@@ -82,11 +81,32 @@
     </div>
   </div>
   <header>
-    <h1 class="text-center mt-5 pt-5">Wedges</h1>
-    <figure id="container"></figure>
+    <h1 class="categories text-center">CATEGORIES FOR MEN</h1>
   </header>
-  <footer id="footer">
-    <div class="mt-2 ms-5">
+  <section id="men-gategories">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card-image h-100">
+          <a href="/template/minimal-sneakers.html"><img src="https://i.ytimg.com/vi/k_EfKYQGTU8/maxresdefault.jpg"
+              class="card-img-top" alt="..."></a>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card-image h-100">
+          <a href="/template/oxford-shoes.html"><img src="https://i.ytimg.com/vi/qD7oM088gRg/maxresdefault.jpg"
+              class="card-img-top" alt="..."></a>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card-image h-100">
+          <a href="/template/derby-shoes.html"><img src="https://i.ytimg.com/vi/pa-y3sZxLs8/maxresdefault.jpg"
+              class="card-img-top" alt="..."></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer id="shazada-footer">
+    <div class="mt-2 ms-5 container">
       <span style="font-size: 1.5rem;font-weight: bold;">Shazada</span>
       <p>Phone: 02-8123-4567</p>
       <p>Email: group4@gmail.com</p>
@@ -101,12 +121,18 @@
       </div>
     </div>
   </footer>
-  <script>
-    getJSONData("/data/wedges.json");
-  </script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
     crossorigin="anonymous"></script>
+  <!--Script for Active Links-->
+  <script>
+    const activePage = window.location.pathname;
+    const navLinks = document.querySelectorAll("nav a").forEach((link) => {
+      if (link.href.includes(`${activePage}`)) {
+        link.classList.add("active");
+      }
+    });
+  </script>
 </body>
 
 </html>

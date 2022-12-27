@@ -1,0 +1,64 @@
+.about-us-bg {
+    background-image:url("https://cdn.thewirecutter.com/wp-content/media/2021/02/whitesneakers-2048px-0424-2x1-1.jpg?auto=webp&quality=60&crop=2:1&width=1024");
+    height: 500px;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.about-us-header {
+    padding-top:7%;
+    line-height:3.5rem;
+    font-weight: bold;
+}
+.about-us {
+    padding-left: 41%;
+    padding-top:5%;
+    line-height:3.5rem;
+    font-weight: bold;
+}
+.footer-about {
+    position: fixed;
+    height: 100px;
+    bottom: 0;
+    width: 100%;
+    margin-top:10%;
+}
+.copyright-hyperlink {
+    color:black;
+}
+@media (max-width:768px){
+    h1{
+        margin-top: 15%;
+    }
+    .introduction {
+        margin-top: 15%;
+    }
+    .about-me {
+        padding: 2%;
+    }
+    .about-us {
+        padding-left: 35%;
+        line-height:3.5rem;
+        font-weight: bold;
+    }
+}
+@media (max-width:575px){
+    h1{
+        margin-top: 10%;
+    }
+    .introduction {
+        margin-top: 0;
+    }
+    .about-me {
+        padding: 2%;
+    }
+}
+@media (max-width:375px){
+    .about-us {
+        padding-left: 15%;
+        padding-top:20%;
+        line-height:3.5rem;
+        font-weight: bold;
+    }
+}

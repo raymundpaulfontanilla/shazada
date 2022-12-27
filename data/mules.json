@@ -1,32 +1,26 @@
 [
-    {
-      "id": 1,
-      "url": "https://www.charleskeith.com/dw/image/v2/BCWJ_PRD/on/demandware.static/-/Sites-ck-products/default/dwc0859e94/images/hi-res/2022-L7-SL1-60280427-35-1.jpg?sw=1152&sh=1536",
-      "name": "Bow-Tie Mesh Mules - Nude",
-      "price": 1000
-    },
-    {
-      "id": 2,
-      "url": "/assets/images/silver-mules.jpg",
-      "name": "Bow-Tie Mesh Mules - Silver",
-      "price": 2000
-    },
-    {
-      "id": 3,
-      "url": "https://www.charleskeith.com/dw/image/v2/BCWJ_PRD/on/demandware.static/-/Sites-ck-products/default/dwa5de6159/images/hi-res/2022-L7-SL1-60280427-01-1.jpg?sw=1152&sh=1536",
-      "name": "Bow-Tie Mesh Mules - Black",
-      "price": 4000
-    },
-    {
-      "id": 4,
-      "url": "https://www.charleskeith.com/dw/image/v2/BCWJ_PRD/on/demandware.static/-/Sites-ck-products/default/dwb38727b4/images/hi-res/2022-L7-CK1-70900429-41-1.jpg?sw=1152&sh=1536",
-      "name": "Lotso Embellished Platform Mules - Chalk",
-      "price": 3000
-    },
-    {
-      "id": 5,
-      "url": "https://www.charleskeith.com/dw/image/v2/BCWJ_PRD/on/demandware.static/-/Sites-ck-products/default/dwc45e4d5c/images/hi-res/2022-L7-CK1-70900429-01-1.jpg?sw=1152&sh=1536",
-      "name": "Lotso Embellished Platform Mules - Black",
-      "price": 5000
-    }
+  {
+    "id": 1,
+    "url": "https://www.charleskeith.com/dw/image/v2/BCWJ_PRD/on/demandware.static/-/Sites-ck-products/default/dwc0859e94/images/hi-res/2022-L7-SL1-60280427-35-1.jpg?sw=1152&sh=1536",
+    "name": "Bow-Tie Mesh Mules - Nude",
+    "price": 1000
+  },
+  {
+    "id": 3,
+    "url": "https://www.charleskeith.com/dw/image/v2/BCWJ_PRD/on/demandware.static/-/Sites-ck-products/default/dwa5de6159/images/hi-res/2022-L7-SL1-60280427-01-1.jpg?sw=1152&sh=1536",
+    "name": "Bow-Tie Mesh Mules - Black",
+    "price": 4000
+  },
+  {
+    "id": 4,
+    "url": "/assets/images/women-categories/mules/2022-L7-CK1-70900429-41-1.jpg",
+    "name": "Lotso Embellished Platform Mules - Chalk",
+    "price": 3000
+  },
+  {
+    "id": 5,
+    "url": "/assets/images/women-categories/mules/2022-L7-CK1-70900429-01-1.jpg",
+    "name": "Lotso Embellished Platform Mules - Black",
+    "price": 5000
+  }
 ]
