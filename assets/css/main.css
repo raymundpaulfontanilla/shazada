@@ -180,6 +180,9 @@ a:is(:link,:active,:visited).active {
     }
 }
 @media (max-width:375px){
+    .categories {
+        padding-top: 15%;
+    }
     .container .male-content {
         position: absolute;
         top:25%;
@@ -209,5 +212,8 @@ a:is(:link,:active,:visited).active {
     #shazada-footer {
         position: absolute;
         right:55%;
+    }
+    .container {
+        float: left;
     }
 }
