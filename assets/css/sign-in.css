@@ -16,5 +16,7 @@ body {
         position: relative;
         right: 12%;
     }
-    
+    .sign-up {
+        padding-top: 5%;
+    }
 }
