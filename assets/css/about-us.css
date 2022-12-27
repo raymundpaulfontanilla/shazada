@@ -37,6 +37,11 @@
     .about-me {
         padding: 2%;
     }
+    .about-us {
+        padding-left: 35%;
+        line-height:3.5rem;
+        font-weight: bold;
+    }
 }
 @media (max-width:575px){
     h1{
@@ -47,5 +52,13 @@
     }
     .about-me {
         padding: 2%;
+    }
+}
+@media (max-width:375px){
+    .about-us {
+        padding-left: 15%;
+        padding-top:20%;
+        line-height:3.5rem;
+        font-weight: bold;
     }
 }
