@@ -1,25 +1,3 @@
-function getJSONData(urlData) {
-  fetch(urlData)
-    .then((response) => response.json())
-    .then((json) => {
-      let images = json.slice(0);
-      images.map((image) => {
-        document.getElementById("container").innerHTML += `
-      <figure class="container">
-        <img src=${image.url}
-          alt="sample94" />
-        <figcaption>
-          <h3 onclick="addToCart()">Add to cart</h3>
-        </figcaption>
-        <div class="footer">
-        <span class="card-title">${image.name}</span>
-        <span class="card-text" style="color:orange;">₱${image.price}</span>
-        </div>
-      </figure>`;
-      });
-    });
-}
-
 function getJSONDataForContainer(urlData) {
   fetch(urlData)
     .then((response) => response.json())
@@ -51,7 +29,27 @@ function getJSONDataForContainer(urlData) {
       });
     });
 }
-
+function getJSONData(urlData) {
+  fetch(urlData)
+    .then((response) => response.json())
+    .then((json) => {
+      let images = json.slice(0);
+      images.map((image) => {
+        document.getElementById("container").innerHTML += `
+      <figure class="container">
+        <img src=${image.url}
+          alt="sample94" />
+        <figcaption>
+          <h3 onclick="addToCart()">Add to cart</h3>
+        </figcaption>
+        <div class="footer">
+        <span class="card-title">${image.name}</span>
+        <span class="card-text" style="color:orange;">₱${image.price}</span>
+        </div>
+      </figure>`;
+      });
+    });
+}
 let cartCount = 0;
 function addToCart() {
   cartCount++;
