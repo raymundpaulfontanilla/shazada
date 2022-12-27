@@ -1,6 +1,9 @@
 html, body {
     max-width: 100%!important; overflow-x: hidden!important
 }
+body {
+    font-family: 'Slabo 27px', serif;
+}
 li a:is(:link,:active,:visited) {
     color:black;
     text-decoration: none;

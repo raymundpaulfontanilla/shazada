@@ -6,10 +6,14 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+.about-us-header {
+    padding-top:7%;
+    line-height:3.5rem;
+    font-weight: bold;
+}
 .about-us {
     padding-left: 41%;
     padding-top:5%;
-    font-family: VistaSlab;
     line-height:3.5rem;
     font-weight: bold;
 }
