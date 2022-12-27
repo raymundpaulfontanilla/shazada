@@ -27,12 +27,11 @@
 </head>
 
 <body>
-  <!--Navbar-->
   <nav class="navbar navbar-expand-lg fixed-top bg-light">
     <div class="container-fluid">
-      <a class="navbar-brand" href="/index.html"><img src="
+      <nav class="navbar-brand" href="/index.html"><img src="
         https://consent.trustarc.com/v2/asset/16:49:57.509iyipn2_Slogonoback.png" class="img-fluid alt=" logo.png"
-          width="80" height="24"></a>
+          width="80" height="24"></nav>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -195,6 +194,15 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
     crossorigin="anonymous"></script>
+  <!--Script for Active Links-->
+  <script>
+    const activePage = window.location.pathname;
+    const navLinks = document.querySelectorAll("nav a").forEach((link) => {
+      if (link.href.includes(`${activePage}`)) {
+        link.classList.add("active");
+      }
+    });
+  </script>
 </body>
 
 </html>
