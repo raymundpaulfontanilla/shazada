@@ -177,9 +177,9 @@
         18th floor, The W Fifth Avenue, 5th Ave, Taguig, 1630 Metro Manila</p>
       <div class="row-cols-auto d-flex">
         <div class="mb-3 w-25">
-          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email" required>
+          <input type="email" class="form-control" id="txtSubs" placeholder="Email" required>
           <button href="" class="btn rounded-pill btn-white mt-3 text-bg-warning" type="submit"
-            role="button">Subscribe</button>
+            role="button" id="btnSubs">Subscribe</button>
         </div>
       </div>
     </div>
@@ -226,6 +226,7 @@
     const db = getDatabase();
 
     const userContact = ref(db, "contactus")
+    const userSubs = ref(db, "subscribe")
 
     const strFirstName = document.getElementById("txtFirstName");
     const strLastName = document.getElementById("txtLastName");
@@ -233,8 +234,27 @@
     const strEmail = document.getElementById("txtEmail");
     const strMessage = document.getElementById("txtMessage");
     const submitContact = document.getElementById("btnsubmitContact");
+    const strSubs = document.getElementById("txtSubs");
+    const subscribe = document.getElementById("btnSubs");
 
     submitContact.addEventListener("click", contactUs);
+    subscribe.addEventListener("click", subscribeEmail);
+
+    function subscribeEmail() {
+
+      if (txtSubs.value == "") {
+        alert("Field must not be empty!")
+      } else {
+        const subsuser = {
+          subscribeemail: strSubs.value
+        };
+
+        push(userSubs, subsuser);
+        strSubs.value = "";
+        console.log(subsuser);
+        alert("Thank you for subscribing! You will receieve email from us regarding news and promotions regarding our products.")
+      }
+    }
 
     function contactUs() {
         if (txtFirstName.value == "" || txtLastName.value == "" || txtPhone.value == "" || txtEmail.value == "" || txtMessage.value == "") {
