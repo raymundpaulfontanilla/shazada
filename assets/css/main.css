@@ -137,6 +137,9 @@ a:is(:link,:active,:visited).active {
         height: 99%;
         width: 45%;
     }
+    .mb-3 {
+        min-width: 50%;
+    }
 }
 @media (max-width:768px){
     .container .male-content {
@@ -178,6 +181,9 @@ a:is(:link,:active,:visited).active {
     .image-container:hover {
         transform: scale(1);
     }
+    .mb-3 {
+        min-width: 50%;
+    }
     .gmap {
         display: none;
     }
@@ -211,10 +217,6 @@ a:is(:link,:active,:visited).active {
     }
     .gmap {
         display: none;
-    }
-    #shazada-footer {
-        position: absolute;
-        right:55%;
     }
     .container {
         float: left;
