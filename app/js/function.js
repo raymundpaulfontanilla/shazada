@@ -13,7 +13,7 @@ function getJSONDataForContainer(urlData) {
          <a href="/template/men-categories.html">
           <div class='male-content'>
             <h1 class='title'>${title}</h1>
-            <button class='subtitle rounded-pill'>${imageContain.subtitle}</button>
+            <button class='subtitle rounded-pill'>${subtitle}</button>
           </div>
           </a>
         </div>
