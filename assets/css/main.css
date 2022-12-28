@@ -32,6 +32,9 @@ a:is(:link,:active,:visited).active {
     bottom:25%;
     left:10%;
 }
+#men-women-container{
+    margin-left: 15%;
+}
 .container {
     margin-top: 15%;
     margin-right: 1%;
@@ -142,6 +145,10 @@ a:is(:link,:active,:visited).active {
     }
 }
 @media (max-width:768px){
+    #men-women-container{
+        position: relative;
+        right:1%;
+    }
     .container .male-content {
         position: absolute;
         top:25%;
@@ -189,6 +196,10 @@ a:is(:link,:active,:visited).active {
     }
 }
 @media (max-width:375px){
+    #men-women-container{
+        position: relative;
+        right:20%;
+    }
     .categories {
         padding-top: 15%;
     }
