@@ -151,11 +151,6 @@
         </div>
         <div class="mb-3 w-25">
           <input type="email" class="form-control" id="txtLastName" placeholder="LastName" required>
-          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Name" required>
-        </div>
-        <div class="mb-3 w-25">
-          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="LastName" required>
-
         </div>
         <div class="mb-3 w-25">
           <input type="tel" class="form-control" id="txtPhone" placeholder="Phone" required>
@@ -219,13 +214,13 @@
     import { getDatabase, ref, set, push, onValue } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js";
 
     const firebaseConfig = {
-        apiKey: "AIzaSyD-0VAnfTH3nMxfQQd5jqNuSnZexDy71tk",
-        authDomain: "shazada-8390a.firebaseapp.com",
-        databaseURL: "https://shazada-8390a-default-rtdb.asia-southeast1.firebasedatabase.app",
-        projectId: "shazada-8390a",
-        storageBucket: "shazada-8390a.appspot.com",
-        messagingSenderId: "78486050481",
-        appId: "1:78486050481:web:b981e064b469ec91a53490"
+      apiKey: "AIzaSyD-0VAnfTH3nMxfQQd5jqNuSnZexDy71tk",
+      authDomain: "shazada-8390a.firebaseapp.com",
+      databaseURL: "https://shazada-8390a-default-rtdb.asia-southeast1.firebasedatabase.app",
+      projectId: "shazada-8390a",
+      storageBucket: "shazada-8390a.appspot.com",
+      messagingSenderId: "78486050481",
+      appId: "1:78486050481:web:b981e064b469ec91a53490"
     };
 
     const app = initializeApp(firebaseConfig);
@@ -243,33 +238,33 @@
     submitContact.addEventListener("click", contactUs);
 
     function contactUs() {
-        if (txtFirstName.value == "" || txtLastName.value == "" || txtPhone.value == "" || txtEmail.value == "" || txtMessage.value == "") {
-            alert("Fields must not be empty!")
+      if (txtFirstName.value == "" || txtLastName.value == "" || txtPhone.value == "" || txtEmail.value == "" || txtMessage.value == "") {
+        alert("Fields must not be empty!")
+      } else {
+        if (isNaN(txtPhone.value) == true) {
+          alert("Please enter a valid phone number.")
         } else {
-            if (isNaN(txtPhone.value) == true) {
-                alert("Please enter a valid phone number.")
-            } else {
 
-                const contactuser = {
-                    firstname: strFirstName.value,
-                    lastname: strLastName.value,
-                    phone: strPhone.value,
-                    emailadd: strEmail.value,
-                    message: strMessage.value
-                };
+          const contactuser = {
+            firstname: strFirstName.value,
+            lastname: strLastName.value,
+            phone: strPhone.value,
+            emailadd: strEmail.value,
+            message: strMessage.value
+          };
 
-                set(userContact, contactuser);
-                strFirstName.value = "";
-                strLastName.value = "";
-                strPhone.value = "";
-                strEmail.value = "";
-                strMessage.value = "";
-                console.log(contactuser);
-                alert("Thank you for contacting us! Please expect an email from us regarding your concern.")
-            }
+          set(userContact, contactuser);
+          strFirstName.value = "";
+          strLastName.value = "";
+          strPhone.value = "";
+          strEmail.value = "";
+          strMessage.value = "";
+          console.log(contactuser);
+          alert("Thank you for contacting us! Please expect an email from us regarding your concern.")
         }
+      }
     }
-</script>
+  </script>
 </body>
 
 </html>
