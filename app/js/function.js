@@ -48,12 +48,63 @@ function getJSONData(urlData) {
         <span class="card-title">${name}</span>
         <span class="card-text" style="color:orange;">₱${price}</span>
         </div>
-      </figure>`;
+      </figure> <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Cart Items</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+          <table style="width:100%">
+          <tr>
+            <th>Item</th>
+            <th>Name</th> 
+            <th>Quantity</th>
+            <th>Price</th>
+          </tr>
+          <tr>
+            <td>Jill</td>
+            <td>Smith</td>
+            <td><i class="fa-solid fa-circle-minus" onclick="decreaseToCart()"></i><i class="fa-solid fa-circle-plus" onclick="addToCart()"></i><span></span></td>
+            <td>${price}</td>
+          </tr>
+          <tr>
+            <td>Eve</td>
+            <td>Jackson</td>
+            <td><i class="fa-solid fa-circle-minus" onclick="decreaseToCart()"></i><i class="fa-solid fa-circle-plus" onclick="addToCart()"></i><span></span></td>
+            <td>94</td>
+          </tr>
+          <tr>
+            <td>John</td>
+            <td>Doe</td>
+            <td><i class="fa-solid fa-circle-minus" onclick="decreaseToCart()"></i><i class="fa-solid fa-circle-plus" onclick="addToCart()"></i><span></span></td>
+            <td>80</td>
+          </tr>
+        </table>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>`;
       });
     });
 }
+
 let cartCount = 0;
 function addToCart() {
-  cartCount++;
-  document.getElementById("cart-count").innerHTML = `${cartCount}`;
+  if (cartCount >= 0 && cartCount < 5) {
+    cartCount++;
+    document.getElementById("cart-count").innerHTML = `${cartCount}`;
+  }
+}
+
+function decreaseToCart() {
+  if (cartCount > 0) {
+    cartCount--;
+    document.getElementById("cart-count").innerHTML = `${cartCount}`;
+  }
 }
