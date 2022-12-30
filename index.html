@@ -238,13 +238,13 @@
     const submitContact = document.getElementById("btnsubmitContact");
     const strSubs = document.getElementById("txtSubs");
     const subscribe = document.getElementById("btnSubs");
-    const signOut = document.getElementsByName("Sign Out");
+    const userSignOut = document.getElementsByName("Sign Out");
 
     submitContact.addEventListener("click", contactUs);
     subscribe.addEventListener("click", subscribeEmail);
-    signOut.addEventListener("click", signOut);
+    userSignOut.addEventListener("click", logout);
 
-    function signOut(auth) {
+    function logout(auth) {
         alert("You have signed out.");
         document.getElementById("lnkSignIn").innerHTML = "Sign In";
     }
