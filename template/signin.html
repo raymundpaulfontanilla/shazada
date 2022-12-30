@@ -142,7 +142,7 @@
                             updateProfile(auth.currentUser, {
                                 displayName: displayName.value
                             });
-                            window.location.replace("https://shazada.vercel.app/index.html");
+                            window.location.replace("https://shazada.vercel.app/");
                         })
                         .catch((error) => {
                             const errorCode = error.code;
@@ -161,7 +161,7 @@
                     const credential = GoogleAuthProvider.credentialFromResult(result);
                     const token = credential.accessToken;
                     const user = result.user;
-                    window.location.replace("https://shazada.vercel.app/index.html");
+                    window.location.replace("https://shazada.vercel.app/");
                 })
                 .catch((error) => {
                     const errorCode = error.code;
