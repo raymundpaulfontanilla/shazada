@@ -46,8 +46,9 @@
                     <input type="password" class="form-control" id="txtPassword" placeholder="Password">
                 </div>
                 <div class="mt-4 d-flex justify-content-center">
-                    <button type="submit" class="btn btn-warning m-3">Sign In</button>
-                    <button type="submit" class="btn btn-warning m-3">Sign In with Google</button>
+                    <button type="submit" class="btn btn-warning m-3" id="btnSignIn">Sign In</button>
+                    <button type="submit" class="btn btn-warning m-3" id="btnSignInWithGoogle">Sign In with
+                        Google</button>
                 </div>
             </div>
             <div class="col-md-6 sign-up">
@@ -80,6 +81,7 @@
 
         import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js";
         import { getDatabase, ref, set, push, onValue } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js";
+        import { getAuth, signInWithEmailAndPassword, GoogleAuthProvider, signInWithPopup, createUserWithEmailAndPassword, updateProfile } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-auth.js";
 
         const firebaseConfig = {
             apiKey: "AIzaSyD-0VAnfTH3nMxfQQd5jqNuSnZexDy71tk",
@@ -93,39 +95,81 @@
 
         const app = initializeApp(firebaseConfig);
         const db = getDatabase();
+        const provider = new GoogleAuthProvider();
 
         const userSignUp = ref(db, "users")
 
+        const signIn = document.getElementById("btnSignIn");
         const signUp = document.getElementById("btnSignUp");
+        const siemail = document.getElementById("txtEmail");
+        const sipassword = document.getElementById("txtPassword");
         const displayName = document.getElementById("txtName");
-        const email = document.getElementById("txtNewEmail");
-        const password = document.getElementById("txtNewPassword");
+        const suemail = document.getElementById("txtNewEmail");
+        const supassword = document.getElementById("txtNewPassword");
         const confirmPassword = document.getElementById("txtConfirmPassword");
 
+        const auth = getAuth();
+
+        signIn.addEventListener("click", SignIn);
         signUp.addEventListener("click", SignUp);
+        signInWithGoogle.addEventListener("click", SignInWithGoogle);
+
+        function SignIn() {
+            siemail = document.getElementById("txtEmail").value;
+            sipassword = document.getElementById("txtPassword").value;
+
+            signInWithEmailAndPassword(auth, siemail, sipassword)
+                .then((userCredential) => {
+                    const user = userCredential.user;
+                    window.location.replace("index.html");
+                })
+                .catch((error) => {
+                    const errorCode = error.code;
+                    const errorMessage = error.message;
+                    alert(error);
+                });
+        }
 
         function SignUp() {
-            if (displayName.value == "" || email.value == "" || password.value == "" || confirmPassword.value == "") {
+            if (displayName.value == "" || suemail.value == "" || supassword.value == "" || confirmPassword.value == "") {
                 alert("Fields must not be empty!")
             } else {
-                if (password.value !== confirmPassword.value) {
-                    alert("Passwords do not match.")
+                if (supassword.value === confirmPassword.value) {
+                    const auth = getAuth();
+                    createUserWithEmailAndPassword(auth, suemail, supassword)
+                        .then(() => {
+                            updateProfile(auth.currentUser, {
+                                displayName: displayName.value
+                            });
+                            window.location.replace("index.html");
+                        })
+                        .catch((error) => {
+                            const errorCode = error.code;
+                            const errorMessage = error.message;
+                            console.log(error);
+                            alert("There seems to be a problem with our server.")
+                        });
                 } else {
-
-                    const user = {
-                        name: displayName.value,
-                        email: email.value,
-                        password: password.value
-                    };
-
-                    set(userSignUp, user);
-                    displayName.value = "";
-                    email.value = "";
-                    password.value = "";
-                    confirmPassword.value = "";
-                    console.log(user);
+                    alert("Passwords do not match.")
                 }
             }
+        }
+
+        function SignInWithGoogle() {
+            signInWithPopup(auth, provider)
+                .then((result) => {
+                    const credential = GoogleAuthProvider.credentialFromResult(result);
+                    const token = credential.accessToken;
+                    const user = result.user;
+                    window.location.replace("index.html");
+                })
+                .catch((error) => {
+                    const errorCode = error.code;
+                    const errorMessage = error.message;
+                    const email = error.customData.email;
+                    const credential = GoogleAuthProvider.credentialFromError(error);
+                    alert(error);
+                });
         }
     </script>
 </body>
