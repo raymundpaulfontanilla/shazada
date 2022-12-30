@@ -101,8 +101,9 @@
 
         const signIn = document.getElementById("btnSignIn");
         const signUp = document.getElementById("btnSignUp");
-        const siemail = document.getElementById("txtEmail");
-        const sipassword = document.getElementById("txtPassword");
+        const signInWithGoogle = document.getElementById("btnSignInWithGoogle");
+        let siemail = document.getElementById("txtEmail");
+        let sipassword = document.getElementById("txtPassword");
         const displayName = document.getElementById("txtName");
         const suemail = document.getElementById("txtNewEmail");
         const supassword = document.getElementById("txtNewPassword");
@@ -141,7 +142,7 @@
                             updateProfile(auth.currentUser, {
                                 displayName: displayName.value
                             });
-                            window.location.replace("index.html");
+                            window.location.replace("../index.html");
                         })
                         .catch((error) => {
                             const errorCode = error.code;
