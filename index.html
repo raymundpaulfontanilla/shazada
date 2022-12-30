@@ -52,7 +52,7 @@
             <a class="nav-link" href="/template/about.html">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/template/signin.html">Sign in</a>
+            <a class="nav-link" href="/template/signin.html" id="lnkSignIn">Sign in</a>
           </li>
         </ul>
         <form class="d-flex">
@@ -179,8 +179,8 @@
       <div class="row-cols-auto d-flex">
         <div class="mb-3 w-25">
           <input type="email" class="form-control" id="txtSubs" placeholder="Email" required>
-          <button href="" class="btn rounded-pill btn-white mt-3 text-bg-warning" type="submit"
-            role="button" id="btnSubs">Subscribe</button>
+          <button href="" class="btn rounded-pill btn-white mt-3 text-bg-warning" type="submit" role="button"
+            id="btnSubs">Subscribe</button>
         </div>
       </div>
     </div>
@@ -212,6 +212,7 @@
 
     import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js";
     import { getDatabase, ref, set, push, onValue } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js";
+    import { getAuth, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-auth.js";
 
     const firebaseConfig = {
       apiKey: "AIzaSyD-0VAnfTH3nMxfQQd5jqNuSnZexDy71tk",
@@ -241,6 +242,16 @@
     submitContact.addEventListener("click", contactUs);
     subscribe.addEventListener("click", subscribeEmail);
 
+    onAuthStateChanged(auth, (user) => {
+      if (user) {
+        const uid = user.uid;
+        document.getElementById("lnkSignIn").innerHTML = "Sign Out";
+      } else {
+        window.location.replace("index.html");
+        document.getElementById("lnkSignIn").innerHTML = "Sign In";
+      }
+    });
+
     function subscribeEmail() {
 
       if (txtSubs.value == "") {
@@ -253,7 +264,7 @@
         push(userSubs, subsuser);
         strSubs.value = "";
         console.log(subsuser);
-        alert("Thank you for subscribing! You will receieve email from us regarding news and promotions regarding our products.")
+        alert("Thank you for subscribing! You will receive email from us regarding news and promotions regarding our products.")
       }
     }
 
@@ -272,8 +283,8 @@
             emailadd: strEmail.value,
             message: strMessage.value
           };
-
           push(userContact, contactuser);
+
           strFirstName.value = "";
           strLastName.value = "";
           strPhone.value = "";
