@@ -3,24 +3,28 @@
     "id": 1,
     "url": "https://mensflair.com/wp-content/uploads/2022/06/MinimalistSneakerBrands15-768x960.jpg",
     "name": "CQP Tarmac Light Grey",
-    "price": 2000
+    "price": 2000,
+    "quantity": 0
   },
   {
     "id": 2,
     "url": "https://mensflair.com/wp-content/uploads/2022/06/MinimalistSneakerBrands10-768x960.jpg",
     "name": "Aurélien Bayside",
-    "price": 3000
+    "price": 3000,
+    "quantity": 0
   },
   {
     "id": 3,
     "url": "https://mensflair.com/wp-content/uploads/2022/06/MinimalistSneakerBrands3-768x960.jpg",
     "name": "JAK Royal Black",
-    "price": 4000
+    "price": 4000,
+    "quantity": 0
   },
   {
     "id": 4,
     "url": "https://mensflair.com/wp-content/uploads/2022/07/MinimalistSneakerBrands32-768x960.jpg",
     "name": "Oliver Cabell Low 1 Fog",
-    "price": 5000
+    "price": 5000,
+    "quantity": 0
   }
 ]

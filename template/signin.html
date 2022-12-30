@@ -151,10 +151,21 @@
                         });
                 } else {
                     alert("Passwords do not match.")
+                    const user = {
+                        name: displayName.value,
+                        email: email.value,
+                        password: password.value
+                    };
+
+                    push(userSignUp, user);
+                    displayName.value = "";
+                    email.value = "";
+                    password.value = "";
+                    confirmPassword.value = "";
+                    console.log(user);
                 }
             }
         }
-
         function SignInWithGoogle() {
             signInWithPopup(auth, provider)
                 .then((result) => {
