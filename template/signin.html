@@ -137,7 +137,7 @@
             } else {
                 if (supassword.value === confirmPassword.value) {
                     const auth = getAuth();
-                    createUserWithEmailAndPassword(auth, suemail, supassword)
+                    createUserWithEmailAndPassword(auth, suemail.value, supassword.value)
                         .then(() => {
                             updateProfile(auth.currentUser, {
                                 displayName: displayName.value
