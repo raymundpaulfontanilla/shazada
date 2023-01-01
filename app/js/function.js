@@ -83,22 +83,27 @@ function getJSONData(urlData) {
           </tr>
         </table>
           </div>
+          <hr/>
+          <h5>Total: <span id="total"></span></h5>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
             <button type="button" class="btn btn-primary">Save changes</button>
           </div>
         </div>
       </div>
-    </div>`;
+    </div>
+   `;
       });
     });
 }
 
-let cartCount = 0;
+let cartCount = 0,
+  Quantity = 2000;
 function addToCart() {
-  if (cartCount >= 0 && cartCount < 5) {
+  if (cartCount >= 0 && cartCount < 20) {
     cartCount++;
     document.getElementById("cart-count").innerHTML = `${cartCount}`;
+    document.getElementById("total").innerHTML = `${Quantity * cartCount}`;
   }
 }
 
