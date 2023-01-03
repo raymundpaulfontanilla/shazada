@@ -245,8 +245,8 @@
     userSignOut.addEventListener("click", logout);
 
     function logout(auth) {
-        alert("You have signed out.");
-        document.getElementById("lnkSignIn").innerHTML = "Sign In";
+      alert("You have signed out.");
+      document.getElementById("lnkSignIn").innerHTML = "Sign In";
     }
 
     onAuthStateChanged(auth, (user) => {
