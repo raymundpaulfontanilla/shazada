@@ -86,8 +86,8 @@ function getJSONData(urlData) {
           <hr/>
           <h5>Total: <span id="total"></span></h5>
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
+            <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-warning">Proceed to checkout</button>
           </div>
         </div>
       </div>
