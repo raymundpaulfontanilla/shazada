@@ -64,23 +64,32 @@
     </div>
   </nav>
   <!-- Checkout page static modal-->
-  <!-- <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Cart Items</h1>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          Sample Static Data
+          <table style="width:100%" id="modal-items">
+            <tr>
+              <th>Item</th>
+              <th>Name</th>
+              <th>Quantity</th>
+              <th>Price</th>
+            </tr>
+          </table>
         </div>
+        <hr />
+        <h5>Total: <span id="total"></span></h5>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
+          <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-warning">Proceed to checkout</button>
         </div>
       </div>
     </div>
-  </div> -->
+  </div>
   <header>
     <h1 class="text-center categories mt-5">Minimal Sneakers</h1>
     <figure id="container"></figure>

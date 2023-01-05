@@ -48,7 +48,38 @@ function getJSONData(urlData) {
         <span class="card-title">${name}</span>
         <span class="card-text" style="color:orange;">₱${price}</span>
         </div>
-      </figure> <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      </figure> 
+   `;
+      });
+    });
+}
+
+let cartCount = 0;
+function addToCart() {
+  if (cartCount >= 0 && cartCount < 20) {
+    cartCount++;
+    document.getElementById("cart-count").innerHTML = `${cartCount}`;
+  }
+}
+
+function decreaseToCart() {
+  if (cartCount > 0) {
+    cartCount--;
+    document.getElementById("cart-count").innerHTML = `${cartCount}`;
+  }
+}
+
+let cart = [];
+
+function displayCart(a) {
+  let j = 0;
+  if (cart.length == 0) {
+    document.getElementById("exampleModal").innerHTML = "Your cart is empty";
+  }
+}
+
+{
+  /* <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
@@ -91,25 +122,5 @@ function getJSONData(urlData) {
           </div>
         </div>
       </div>
-    </div>
-   `;
-      });
-    });
-}
-
-let cartCount = 0,
-  Quantity = 2000;
-function addToCart() {
-  if (cartCount >= 0 && cartCount < 20) {
-    cartCount++;
-    document.getElementById("cart-count").innerHTML = `${cartCount}`;
-    document.getElementById("total").innerHTML = `${Quantity * cartCount}`;
-  }
-}
-
-function decreaseToCart() {
-  if (cartCount > 0) {
-    cartCount--;
-    document.getElementById("cart-count").innerHTML = `${cartCount}`;
-  }
+    </div> */
 }
