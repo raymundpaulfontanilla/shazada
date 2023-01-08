@@ -23,7 +23,7 @@ calculation();
 /**
  * ! Generates the Cart Page with product cards composed of
  * ! images, title, price, buttons, & Total price
- * ? When basket is blank -> show's Cart is Empty
+x * ? When basket is blank -> show's Cart is Empty
  */
 
 let generateCartItems = () => {

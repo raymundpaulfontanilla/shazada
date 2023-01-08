@@ -26,8 +26,8 @@ body {
     bottom:25%;
     left:10%;
 }
-#men-women-container{
-    margin-left: 15%;
+#men-container{
+    margin-left: 28%;
 }
 .container {
     margin-top: 15%;
@@ -38,7 +38,7 @@ body {
 .container .male-content {
     position: absolute;
     top:50%;
-    left:20%;
+    left:25%;
     transform: translate(-50%, -50%);
     text-align: center;
 }
