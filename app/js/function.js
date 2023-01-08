@@ -10,7 +10,7 @@ function getJSONDataForContainer(urlData) {
         ).innerHTML += `<div class="row">
         <div class="col-lg-6">
          <img src=${mensUrl} class="image-container" width="500">
-         <a href="/template/men-categories.html">
+         <a href="/template/categories.html">
           <div class='male-content'>
             <h1 class='title'>${title}</h1>
             <button class='subtitle rounded-pill'>${subtitle}</button>
@@ -19,7 +19,7 @@ function getJSONDataForContainer(urlData) {
         </div>
         <div class="col-lg-6">
           <img src=${womensUrl} class="image-container" width="460">
-          <a href="/template/women-categories.html">
+          <a href="/template/categories.html">
           <div class='women-content'>
             <h1 class='title'>${title2}</h1>
             <button class="subtitle rounded-pill">${subtitle}</button>
@@ -29,53 +29,6 @@ function getJSONDataForContainer(urlData) {
       </div>`;
       });
     });
-}
-function getJSONData(urlData) {
-  fetch(urlData)
-    .then((response) => response.json())
-    .then((json) => {
-      let images = json.slice(0);
-      images.map((image) => {
-        let { url, name, price } = image;
-        document.getElementById("container").innerHTML += `
-      <figure class="container">
-        <img src=${url}
-          alt="sample94" />
-        <figcaption>
-          <h3 onclick="addToCart()">Add to cart</h3>
-        </figcaption>
-        <div class="footer">
-        <span class="card-title">${name}</span>
-        <span class="card-text" style="color:orange;">₱${price}</span>
-        </div>
-      </figure> 
-   `;
-      });
-    });
-}
-
-let cartCount = 0;
-function addToCart() {
-  if (cartCount >= 0 && cartCount < 20) {
-    cartCount++;
-    document.getElementById("cart-count").innerHTML = `${cartCount}`;
-  }
-}
-
-function decreaseToCart() {
-  if (cartCount > 0) {
-    cartCount--;
-    document.getElementById("cart-count").innerHTML = `${cartCount}`;
-  }
-}
-
-let cart = [];
-
-function displayCart(a) {
-  let j = 0;
-  if (cart.length == 0) {
-    document.getElementById("exampleModal").innerHTML = "Your cart is empty";
-  }
 }
 
 let shop = document.getElementById("shop");
