@@ -160,7 +160,6 @@ let TotalAmount = () => {
 
     return (label.innerHTML = `
     <h2>Total Bill : ₱ ${amount}</h2>
-    <button class="checkout">Checkout</button>
     <button onclick="clearCart()" class="removeAll">Clear Cart</button>
     `);
   } else return;

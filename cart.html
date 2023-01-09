@@ -20,6 +20,8 @@
   <!--External CSS-->
   <link rel="stylesheet" href="/assets/css/product.css" />
   <link rel="stylesheet" href="/assets/css/main.css" />
+  <!--Stripe API-->
+  <script src="https://js.stripe.com/v3/"></script>
 </head>
 
 <body>
@@ -54,6 +56,7 @@
   </nav>
   <div id="label" class="text-center" style="margin-top: 8%;"></div>
   <div class="shopping-cart" id="shopping-cart"></div>
+  <button id="checkout2">Checkout</button>
   <!--Bootstrap Javascript CDN-->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
     integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
@@ -63,6 +66,25 @@
     crossorigin="anonymous"></script>
   <script src="/app/js/data/data.js"></script>
   <script src="/app/js/cart.js"></script>
+  <script>
+    let stripe = Stripe("pk_test_51JohPzKE3tEJVrCvFw0k7uqC9EeBUVPukiW27PRgAIRBvXtMrJyjJXgB4IJF19NZZvatxinPj0s1Xy06cnvaYBFN00RYUE746n");
+
+    document.getElementById("checkout2").addEventListener("click", function () {
+      stripe.redirectToCheckout({
+        lineItems: [
+          {
+            price: "price_1MLzFSKE3tEJVrCv39v3eATr",
+            quantity: 1,
+          },
+        ],
+        mode: "subscription",
+        successUrl: "https://shazada-git-master-raymundpaulfontanilla.vercel.app/q",
+        cancelUrl: "https://www.twitter.com"
+      }).then(function (result) {
+        alert(result);
+      })
+    })
+  </script>
 </body>
 
 </html>
